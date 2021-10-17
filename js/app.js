@@ -51,3 +51,34 @@ scrollLinks.forEach((link) => {
     linksContainer.style.height = 0;
   });
 });
+
+// Add Animation When Scrolled To
+const skill = [...document.querySelectorAll(".skill")];
+const skillIcon = [...document.querySelectorAll(".skill-icon")];
+window.addEventListener("scroll", () => {
+  let scrollHeight = window.pageYOffset;
+  const userTieOffset = skillIcon[0].offsetTop - 200;
+  const usersCogOffset = skillIcon[1].offsetTop - 200;
+  const networkWiredOffset = skillIcon[2].offsetTop - 200;
+  const moneyAltOffset = skillIcon[3].offsetTop - 200;
+  if (scrollHeight > userTieOffset) {
+    skill[0].classList.add("show-icon");
+  } else {
+    skill[0].classList.remove("show-icon");
+  }
+  if (scrollHeight > usersCogOffset) {
+    skill[1].classList.add("show-icon");
+  } else {
+    skill[1].classList.remove("show-icon");
+  }
+  if (scrollHeight > networkWiredOffset) {
+    skill[2].classList.add("show-icon");
+  } else {
+    skill[2].classList.remove("show-icon");
+  }
+  if (scrollHeight > moneyAltOffset) {
+    skill[3].classList.add("show-icon");
+  } else {
+    skill[3].classList.remove("show-icon");
+  }
+});
