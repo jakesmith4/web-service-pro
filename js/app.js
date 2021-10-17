@@ -59,6 +59,10 @@ const aboutImg = document.querySelector(".about-img");
 const aboutPictureContainer = document.querySelector(
   ".about-picture-container"
 );
+const serviceImgContainer = [
+  ...document.querySelectorAll(".service-img-container"),
+];
+const service = [...document.querySelectorAll(".service")];
 window.addEventListener("scroll", () => {
   let scrollHeight = window.pageYOffset;
   const userTieOffset = skillIcon[0].offsetTop - 200;
@@ -66,6 +70,9 @@ window.addEventListener("scroll", () => {
   const networkWiredOffset = skillIcon[2].offsetTop - 200;
   const moneyAltOffset = skillIcon[3].offsetTop - 200;
   const aboutPictureContainerOffset = aboutPictureContainer.offsetTop - 200;
+  const serviceImgContainer1Offset = serviceImgContainer[0].offsetTop - 200;
+  const serviceImgContainer2Offset = serviceImgContainer[1].offsetTop - 200;
+  const serviceImgContainer3Offset = serviceImgContainer[2].offsetTop - 200;
   if (scrollHeight > userTieOffset) {
     skill[0].classList.add("show-icon");
   } else {
@@ -92,5 +99,20 @@ window.addEventListener("scroll", () => {
   } else {
     aboutImg.classList.remove("slide-img");
     aboutPictureContainer.classList.remove("show-slide");
+  }
+  if (scrollHeight > serviceImgContainer1Offset) {
+    service[0].classList.add("service-animation");
+  } else {
+    service[0].classList.remove("service-animation");
+  }
+  if (scrollHeight > serviceImgContainer2Offset) {
+    service[1].classList.add("service-animation");
+  } else {
+    service[1].classList.remove("service-animation");
+  }
+  if (scrollHeight > serviceImgContainer3Offset) {
+    service[2].classList.add("service-animation");
+  } else {
+    service[2].classList.remove("service-animation");
   }
 });

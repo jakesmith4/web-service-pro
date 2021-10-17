@@ -757,21 +757,21 @@ Services
   transition: all 0.8s ease-in-out;
 }
 
-.service-img-container:hover {
+.service-animation .service-img-container {
   box-shadow: 3px 3px 3px 2px var(--black);
 }
 
-.service-img-container:hover .service-overlay {
+.service-animation .service-overlay {
   transform: translateY(0);
 }
 
-.service-img-container:hover .service-overlay p {
+.service-animation .service-overlay p {
   opacity: 1;
 }
 
-.service-img-container:hover .service-img {
+.service-animation .service-img {
   transform: scale(1);
-  filter: blur(2px);
+  filter: blue(2px);
 }
 
 .service-img {
