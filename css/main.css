@@ -674,16 +674,16 @@ About
   transform: scale(1.3) rotate(12deg);
 }
 
-.about-picture-container:hover {
-  box-shadow: 3px 3px 5px 1px var(--black);
-}
-
-.about-picture-container:hover .about-picture {
+.show-slide .about-picture {
   transform: scale(1) rotate(0);
 }
 
-.about-picture-container:hover::after {
+.slide-img .about-picture-container::after {
   transform: translate(0) rotate(0);
+}
+
+.slide-img .about-picture-container {
+  box-shadow: 3px 3px 5px 1px var(--black);
 }
 
 .about-info .section-title {
