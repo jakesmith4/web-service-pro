@@ -400,6 +400,7 @@ Navbar
   margin: 0;
   overflow: hidden;
   transition: all 0.8s ease-in-out;
+  padding-bottom: 0.5rem;
 }
 
 .show-links {
