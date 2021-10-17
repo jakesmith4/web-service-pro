@@ -70,9 +70,9 @@ window.addEventListener("scroll", () => {
   const networkWiredOffset = skillIcon[2].offsetTop - 200;
   const moneyAltOffset = skillIcon[3].offsetTop - 200;
   const aboutPictureContainerOffset = aboutPictureContainer.offsetTop - 200;
-  const serviceImgContainer1Offset = serviceImgContainer[0].offsetTop - 250;
-  const serviceImgContainer2Offset = serviceImgContainer[1].offsetTop - 250;
-  const serviceImgContainer3Offset = serviceImgContainer[2].offsetTop - 250;
+  const serviceImgContainer1Offset = serviceImgContainer[0].offsetTop - 300;
+  const serviceImgContainer2Offset = serviceImgContainer[1].offsetTop - 300;
+  const serviceImgContainer3Offset = serviceImgContainer[2].offsetTop - 300;
   if (scrollHeight > userTieOffset) {
     skill[0].classList.add("show-icon");
   } else {
