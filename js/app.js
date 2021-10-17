@@ -63,6 +63,7 @@ const serviceImgContainer = [
   ...document.querySelectorAll(".service-img-container"),
 ];
 const service = [...document.querySelectorAll(".service")];
+const card = [...document.querySelectorAll(".card")];
 window.addEventListener("scroll", () => {
   let scrollHeight = window.pageYOffset;
   const userTieOffset = skillIcon[0].offsetTop - 200;
@@ -73,6 +74,9 @@ window.addEventListener("scroll", () => {
   const serviceImgContainer1Offset = serviceImgContainer[0].offsetTop - 300;
   const serviceImgContainer2Offset = serviceImgContainer[1].offsetTop - 300;
   const serviceImgContainer3Offset = serviceImgContainer[2].offsetTop - 300;
+  const cardOneOffset = card[0].offsetTop - 250;
+  const cardTwoOffset = card[1].offsetTop - 250;
+  const cardThreeOffset = card[2].offsetTop - 250;
   if (scrollHeight > userTieOffset) {
     skill[0].classList.add("show-icon");
   } else {
@@ -114,5 +118,20 @@ window.addEventListener("scroll", () => {
     service[2].classList.add("service-animation");
   } else {
     service[2].classList.remove("service-animation");
+  }
+  if (scrollHeight > cardOneOffset) {
+    card[0].classList.add("card-animation");
+  } else {
+    card[0].classList.remove("card-animation");
+  }
+  if (scrollHeight > cardTwoOffset) {
+    card[1].classList.add("card-animation");
+  } else {
+    card[1].classList.remove("card-animation");
+  }
+  if (scrollHeight > cardThreeOffset) {
+    card[2].classList.add("card-animation");
+  } else {
+    card[2].classList.remove("card-animation");
   }
 });
