@@ -342,7 +342,7 @@ Navbar
 }
 
 .fixed-nav {
-  opacity: 0.95;
+  /* opacity: 0.95; */
   box-shadow: var(--shadow-4);
   background: var(--primary-500);
 }
