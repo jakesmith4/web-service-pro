@@ -334,9 +334,7 @@ Navbar
   line-height: 1;
   z-index: 3;
   background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 100%;
   transition: var(--transition);
 }
@@ -344,6 +342,9 @@ Navbar
 .fixed-nav {
   box-shadow: var(--shadow-4);
   background: var(--primary-500);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .background {
