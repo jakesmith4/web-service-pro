@@ -1540,9 +1540,15 @@ Contact
   color: var(--secondary-800);
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 375px) {
   .contact-icon-container a {
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .contact-icon-container a {
+    font-size: 1.2rem;
   }
 }
 
