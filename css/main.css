@@ -1053,13 +1053,28 @@ Works
   font-style: italic;
 }
 
+.step {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem 0;
+}
+
+.step-transition .step-icon {
+  transform: scale(1.2);
+  border-color: var(--white);
+}
+
+.step-transition .step-box p {
+  background: var(--white);
+  border-color: var(--secondary-500);
+}
+
 .step-box {
   text-align: center;
   flex: 0 0 90%;
-}
-
-.step:hover .step-icon {
-  transform: scale(1.2);
 }
 
 .step-icon {
@@ -1075,7 +1090,8 @@ Works
   align-items: center;
   margin: 0 auto;
   margin-bottom: 0.5rem;
-  border: 2px solid var(--white);
+  border: 2px solid transparent;
+  transform: scale(0.95);
   transition: all 0.8s ease-in-out;
 }
 
@@ -1086,19 +1102,14 @@ Works
 }
 
 .step-box p {
-  max-width: 10rem;
+  max-width: 13rem;
   margin: 0 auto;
   letter-spacing: 0.5px;
   color: var(--secondary-600);
-}
-
-.step {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-direction: column-reverse;
-  align-items: center;
-  margin-bottom: 2rem;
-  gap: 2rem 0;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  transition: all 0.8s ease-in-out;
+  border-radius: var(--borderRadius);
 }
 
 .step-arrow {
