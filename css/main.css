@@ -1067,9 +1067,12 @@ Works
   border-color: var(--white);
 }
 
-.step-transition .step-box p {
-  background: var(--white);
-  border-color: var(--secondary-500);
+.step-transition .step-box h5 .underline {
+  opacity: 1;
+}
+
+.step-transition .arrow-icon {
+  opacity: 1;
 }
 
 .step-box {
@@ -1101,12 +1104,19 @@ Works
   color: var(--secondary-600);
 }
 
+.step-box h5 .underline {
+  background: var(--secondary-500);
+  width: 90px;
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+}
+
 .step-box p {
-  max-width: 13rem;
+  max-width: 20rem;
   margin: 0 auto;
   letter-spacing: 0.5px;
   color: var(--secondary-600);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border: 2px solid transparent;
   transition: all 0.8s ease-in-out;
   border-radius: var(--borderRadius);
@@ -1121,10 +1131,8 @@ Works
   transform: rotate(90deg);
   font-size: 1.2rem;
   color: var(--secondary-500);
-}
-
-.step:nth-of-type(1) .arrow-icon {
   opacity: 0;
+  transition: all 0.8s ease-in-out;
 }
 
 @media screen and (min-width: 576px) {
@@ -1139,10 +1147,6 @@ Works
     flex-direction: row;
     margin-right: 0;
   }
-  .step:nth-of-type(1) .arrow-icon {
-    opacity: 1;
-  }
-  .step:nth-of-type(2) .arrow-icon,
   .step:nth-of-type(4) .arrow-icon {
     opacity: 0;
   }
@@ -1154,9 +1158,6 @@ Works
 @media screen and (min-width: 768px) {
   .works-center {
     grid-template-columns: repeat(3, 1fr);
-  }
-  .step:nth-of-type(2) .arrow-icon {
-    opacity: 1;
   }
 }
 
