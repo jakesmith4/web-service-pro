@@ -342,7 +342,6 @@ Navbar
 }
 
 .fixed-nav {
-  /* opacity: 0.95; */
   box-shadow: var(--shadow-4);
   background: var(--primary-500);
 }
@@ -1460,7 +1459,7 @@ Contact
 =============
 */
 .contact {
-  background: var(--grey-400);
+  background: var(--secondary-500);
 }
 
 .about-contact-info h2 {
@@ -1475,7 +1474,7 @@ Contact
 }
 
 .about-contact-info h4 {
-  color: var(--primary-600);
+  color: var(--black);
   letter-spacing: var(--letterSpacing);
 }
 
@@ -1487,7 +1486,7 @@ Contact
 .contact-icon {
   margin-right: 8px;
   color: var(--primary-600);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0 0.2rem;
 }
 
@@ -1497,13 +1496,20 @@ Contact
   color: var(--secondary-600);
   margin: 0 5px 0 0;
   color: var(--white);
+  font-size: 1.3rem;
+}
+
+.contact-icon-container p {
+  color: var(--white);
+  letter-spacing: var(--letterSpacing);
+  margin: 0;
 }
 
 .contact-icon-container a {
   margin: 0;
   letter-spacing: 2px;
   color: var(--white);
-  font-size: 14px;
+  font-size: 0.9rem;
   transition: var(--transition);
 }
 
@@ -1513,7 +1519,7 @@ Contact
 
 .contact-social-container a {
   margin-right: 0.5rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .contact-social-container a {
@@ -1522,7 +1528,7 @@ Contact
 
 .contact-social-container a:nth-of-type(1),
 .contact-social-container a:nth-of-type(3) {
-  color: var(--secondary-600);
+  color: var(--white);
 }
 
 .contact-social-container a:nth-of-type(2),
@@ -1531,11 +1537,25 @@ Contact
 }
 
 .contact-social-container a:hover {
-  color: var(--white);
+  color: var(--secondary-800);
+}
+
+@media screen and (min-width: 450px) {
+  .contact-icon-container a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
 }
 
 /* Form */
-
 .form {
   background: var(--primary-600);
   box-shadow: 2px 2px 5px 3px var(--black);
@@ -1597,21 +1617,6 @@ Contact
 .about-form button:hover {
   background: var(--secondary-700);
   color: var(--white);
-}
-
-@media screen and (min-width: 450px) {
-  .contact-icon-container a {
-    font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact-center {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 2rem;
-  }
 }
 
 /* 
