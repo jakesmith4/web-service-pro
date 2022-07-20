@@ -53,3 +53,11 @@
 ## _**TECHNOLOGYS & WEB DESIGN**_
 
 ![Technologys & Web Design](./img-markdown/technogelys-min.png)
+
+## _**CONTACT SECTION**_
+
+![Contact Section](./img-markdown/contact-min.png)
+
+## _**FOOTER**_
+
+![Footer](./img-markdown/footer-min.png)
